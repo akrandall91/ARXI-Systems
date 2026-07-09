@@ -4,8 +4,8 @@ All listed stock photos are from Pexels and are documented for traceability. Pex
 
 | Image filename | Source URL | Photographer / creator | License/source notes | Where used |
 |---|---|---|---|---|
-| `assets/media/arxi-hero-infrastructure.jpg` | https://images.pexels.com/photos/35956956/pexels-photo-35956956.jpeg | dwi2793 | Pexels license; commercial use allowed | Homepage hero background/poster |
-| `assets/media/flagship-smart-shelter.jpg` | https://images.pexels.com/photos/13433026/pexels-photo-13433026.jpeg | imduc93 | Pexels license; commercial use allowed | Homepage flagship system; manufacturer hero and scenario cards |
+| `assets/media/arxi-hero-infrastructure.jpg` | https://images.pexels.com/photos/35956956/pexels-photo-35956956.jpeg | dwi2793 | Pexels license; commercial use allowed | Retained supporting transit asset; previous hero source |
+| `assets/media/flagship-smart-shelter.jpg` | https://images.pexels.com/photos/13433026/pexels-photo-13433026.jpeg | imduc93 | Pexels license; commercial use allowed | Retained supporting shelter/transit asset; previous flagship source |
 | `assets/media/usecase-transit.jpg` | https://images.pexels.com/photos/35956956/pexels-photo-35956956.jpeg | dwi2793 | Pexels license; commercial use allowed | Homepage use cases, pilot, agency preview; agency hero and scenarios; manufacturer transit display scenario |
 | `assets/media/usecase-parks.jpg` | https://images.pexels.com/photos/17113416/pexels-photo-17113416.jpeg | Ayca Nur | Pexels license; commercial use allowed | Homepage solution imagery and use cases; agency and manufacturer public-space scenarios |
 | `assets/media/usecase-trails.jpg` | https://images.pexels.com/photos/24289081/pexels-photo-24289081.jpeg | William Jacobs | Pexels license; commercial use allowed | Homepage use cases and agency preview; agency proof panel; manufacturer solar lighting scenario |
