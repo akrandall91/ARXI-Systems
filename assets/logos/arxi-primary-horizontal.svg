@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="320" viewBox="0 0 1180 320" role="img" aria-labelledby="title desc">
+  <title id="title">ARXI Systems primary horizontal logo</title>
+  <desc id="desc">Transparent ARXI Systems vector logo.</desc>
+  <defs>
+    <style>
+      .wordmark { font-family: Montserrat, Inter, Arial, Helvetica, sans-serif; font-weight: 900; }
+      .submark { font-family: Montserrat, Inter, Arial, Helvetica, sans-serif; font-weight: 700; }
+    </style>
+  </defs>
+  
+  
+    <g transform="translate(40,38) scale(1.02)">
+      <path d="M58 238 L140 70 L222 238" fill="none" stroke="#0B1820" stroke-width="28" stroke-linecap="square" stroke-linejoin="miter"/>
+      <path d="M70 126 A84 84 0 0 1 210 126" fill="none" stroke="#F2A11F" stroke-width="15" stroke-linecap="square"/>
+      <rect x="112" y="185" width="24" height="53" rx="1" fill="#3E8C83"/>
+      <rect x="148" y="148" width="24" height="90" rx="1" fill="#3E8C83"/>
+      <rect x="184" y="185" width="24" height="53" rx="1" fill="#3E8C83"/>
+    </g>
+  <text x="345" y="156" class="wordmark" font-size="132" letter-spacing="13" fill="#0B1820">ARXI</text>
+  <text x="350" y="238" class="submark" font-size="42" letter-spacing="37" fill="#3E8C83">SYSTEMS</text>
+
+</svg>

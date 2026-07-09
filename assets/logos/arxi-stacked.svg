@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="900" viewBox="0 0 1000 900" role="img" aria-labelledby="title desc">
+  <title id="title">ARXI Systems stacked logo</title>
+  <desc id="desc">Transparent ARXI Systems vector logo.</desc>
+  <defs>
+    <style>
+      .wordmark { font-family: Montserrat, Inter, Arial, Helvetica, sans-serif; font-weight: 900; }
+      .submark { font-family: Montserrat, Inter, Arial, Helvetica, sans-serif; font-weight: 700; }
+    </style>
+  </defs>
+  
+  
+    <g transform="translate(310,80) scale(1.45)">
+      <path d="M58 238 L140 70 L222 238" fill="none" stroke="#0B1820" stroke-width="28" stroke-linecap="square" stroke-linejoin="miter"/>
+      <path d="M70 126 A84 84 0 0 1 210 126" fill="none" stroke="#F2A11F" stroke-width="15" stroke-linecap="square"/>
+      <rect x="112" y="185" width="24" height="53" rx="1" fill="#3E8C83"/>
+      <rect x="148" y="148" width="24" height="90" rx="1" fill="#3E8C83"/>
+      <rect x="184" y="185" width="24" height="53" rx="1" fill="#3E8C83"/>
+    </g>
+  <text x="500" y="680" text-anchor="middle" class="wordmark" font-size="158" letter-spacing="18" fill="#0B1820">ARXI</text>
+  <text x="500" y="780" text-anchor="middle" class="submark" font-size="55" letter-spacing="42" fill="#3E8C83">SYSTEMS</text>
+
+</svg>

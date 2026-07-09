@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="ARXI Systems smart infrastructure route graphic">
+  <rect width="1200" height="630" fill="#05080E"/>
+  <path d="M0 520C220 440 328 572 520 474c185-94 224-286 410-316 106-17 193 23 270 84" fill="none" stroke="#3FC9EF" stroke-width="7" opacity=".75"/>
+  <path d="M0 410c168-98 312-64 474-150 154-81 232-190 390-178 126 9 220 86 336 180" fill="none" stroke="#E8A33D" stroke-width="7" opacity=".9"/>
+  <g fill="#05080E" stroke-width="6">
+    <circle cx="214" cy="455" r="18" stroke="#E8A33D"/><circle cx="522" cy="473" r="18" stroke="#3FC9EF"/><circle cx="783" cy="129" r="18" stroke="#4ADE95"/><circle cx="1016" cy="168" r="18" stroke="#3FC9EF"/>
+  </g>
+  <text x="80" y="150" fill="#F4F2EA" font-family="Arial, sans-serif" font-size="78" font-weight="800">ARXI Systems</text>
+  <text x="82" y="224" fill="#93A0B4" font-family="Arial, sans-serif" font-size="35">One accountable partner between the agency and the solution.</text>
+  <text x="84" y="560" fill="#E8A33D" font-family="Courier New, monospace" font-size="24" font-weight="700">SOURCE · REPRESENT · INTEGRATE · PILOT</text>
+</svg>
