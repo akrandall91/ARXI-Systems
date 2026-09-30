@@ -44,8 +44,9 @@ module.exports=async function handler(req,res){
  if(!process.env.SQUARE_ACCESS_TOKEN||!process.env.SQUARE_LOCATION_ID)return res.status(503).json({error:'Square checkout is awaiting activation.'});
  try{
   const c=req.body||{};
-  if(c.kind==='nfcStand')return await handleNfcStand(c,res);
-  if(c.kind==='tapMini')return await handleTapMini(c,res);
+  // Everything except the single-tap stand is quoted per job.
+  if(c.kind==='nfcStand'&&c.tier==='singleTap')return await handleNfcStand(c,res);
+  throw new Error('This item is quoted per job. Please request a quote.');
   const p=PRODUCTS[c.product];
   if(!p||c.oversized)throw new Error('Invalid standard configuration');
   const qty=Math.max(1,Math.min(10,Number(c.quantity)||1));

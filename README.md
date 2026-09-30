@@ -6,7 +6,7 @@ Product site for ARXI Systems (arxisystems.com): displays, lighting, NFC tap pro
 
 - `index.html` home · `products.html` catalog with Available / Custom / Lab status · `tap.html` Tap (NFC) category
 - `tap-mini.html` Tap Mini with Square checkout · `nfc-stand.html` tap stand configurator · `memory-light.html`
-- `order.html` custom order builder (lithophanes, lightboxes, matrices, layered art) · `what-you-get.html` options guide
+- `order.html` custom order builder (lithophanes, lightboxes, matrices, layered art) · `features.html` features and upgrades (the old `what-you-get.html` guide redirects here)
 - `for-business.html` · `lab.html` · `about.html` · `gallery.html` · `faq.html` · `contact.html` (custom quote) · `thanks.html` (after payment)
 - `agencies.html`, `manufacturers.html`, `arxi-systems.html` redirect to the home page (the old transit site is archived).
 

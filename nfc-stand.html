@@ -17,7 +17,7 @@
 @media(max-width:900px){.heroGrid{grid-template-columns:1fr}.configCard{position:static}.useGrid,.stepsGrid{grid-template-columns:1fr}.destList{grid-template-columns:1fr 1fr}.colorSwatchGrid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){body{overflow-x:hidden}.wrap{padding:0 12px}.nav{height:auto;display:block;padding:14px 0}.navlinks{width:calc(100vw - 12px);margin-top:12px;overflow-x:auto;scrollbar-width:none;display:flex;gap:8px;padding-bottom:4px}.navlinks::-webkit-scrollbar{display:none}.navlinks a{flex:0 0 auto;white-space:nowrap;font-size:12px;padding:9px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.06)}.navlinks a.button{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#0a0b10!important}.section{padding:46px 0}.destList{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.galleryCard img{height:210px}.field{min-height:48px;font-size:16px}}
 .brand{display:inline-flex;align-items:center;gap:9px}.brandMark{width:28px;height:28px;flex:none}.topbar nav.nav{min-width:0;max-width:100%;overflow-x:auto;scrollbar-width:none}</style></head><body><div class="wrap">
-<header class="nav"><a class="brand" href="index.html"><img class="brandMark" src="assets/logos/arxi-icon-reversed.svg" alt="" width="30" height="30">ARXI<span> Systems</span></a><nav class="navlinks"><a href="products.html">Products</a><a href="for-business.html">For Business</a><a href="lab.html">Lab</a><a href="about.html">About</a><a class="button" href="order.html">Start an order</a></nav></header>
+<header class="nav"><a class="brand" href="index.html"><img class="brandMark" src="assets/logos/arxi-icon-reversed.svg" alt="" width="30" height="30">ARXI<span> Systems</span></a><nav class="navlinks"><a href="products.html">Products</a><a href="features.html">Features</a><a href="for-business.html">For Business</a><a href="lab.html">Lab</a><a href="about.html">About</a><a class="button" href="order.html">Start an order</a></nav></header>
 
 <main>
 <section class="hero"><div class="heroGrid">
@@ -35,7 +35,7 @@
 </div>
 <aside class="configCard">
 <h2 id="configTop">Build your stand</h2>
-<div class="sub">Price updates as you choose.</div>
+<div class="sub">Single tap is $50. Key chain and double tap are quoted per order.</div>
 <div class="step"><label class="stepLabel">1. Choose your format</label><div class="tiers" id="tiers"></div></div>
 <div class="step"><label class="stepLabel">2. Stand color</label><div class="swatches" id="standSwatches"></div><div class="swatchLabel" id="standLabel"></div></div>
 <div class="step"><label class="stepLabel">3. Base color</label><div class="swatches" id="baseSwatches"></div><div class="swatchLabel" id="baseLabel"></div></div>
@@ -117,16 +117,16 @@
 <section class="cta"><div class="eyebrow">Ready when you are</div><h2>Put your link on the counter.</h2><p>Choose a format, pick your colors, and tell us where you want the tap to lead.</p><a class="button" href="#configTop">Build your stand</a></section>
 </main>
 
-<footer class="footer"><span>© 2026 ARXI Systems · North Carolina · <a href="mailto:andrew@akrandall.com">andrew@akrandall.com</a></span><span><a href="products.html">Products</a> · <a href="tap.html">Tap</a> · <a href="gallery.html">Gallery</a> · <a href="faq.html">FAQ</a> · <a href="contact.html">Custom quote</a> · <a href="lab.html">Lab</a> · <a href="https://akrandall.com">Setup help: AKRD</a></span></footer>
+<footer class="footer"><span>© 2026 ARXI Systems · North Carolina · <a href="mailto:andrew@akrandall.com">andrew@akrandall.com</a></span><span><a href="products.html">Products</a> · <a href="features.html">Features</a> · <a href="tap.html">Tap</a> · <a href="gallery.html">Gallery</a> · <a href="faq.html">FAQ</a> · <a href="contact.html">Custom quote</a> · <a href="lab.html">Lab</a> · <a href="https://akrandall.com">Setup help: AKRD</a></span></footer>
 </div>
 
 <div class="modal" id="modal"><div class="modalCard"><div class="eyebrow" id="modalEyebrow"></div><h2 id="modalTitle"></h2><p id="modalCopy"></p><button class="button" id="modalAction" style="margin-top:6px"></button><button class="close" id="closeBtn">Keep customizing</button></div></div>
 
 <script>
 const TIERS={
- keyChain:{name:'Key Chain',price:30,desc:'A compact, portable version of the same tap-to-connect technology.'},
+ keyChain:{name:'Key Chain',price:30,quote:true,desc:'A compact, portable version of the same tap-to-connect technology.'},
  singleTap:{name:'Single Tap',price:50,desc:'The countertop stand — one tap zone, one destination.'},
- doubleTap:{name:'Double Tap',price:75,desc:'Two independently programmed tap zones in one stand — two destinations.'}
+ doubleTap:{name:'Double Tap',price:75,quote:true,desc:'Two independently programmed tap zones in one stand — two destinations.'}
 };
 const COLORS=[
  {id:'Black',hex:'#1a1a1a'},{id:'White',hex:'#f2f2f2'},{id:'Gray',hex:'#8a8d99'},{id:'Navy',hex:'#1f2a52'},
@@ -138,7 +138,7 @@ const $=id=>document.getElementById(id),money=n=>'$'+n;
 
 function renderTiers(){
  $('tiers').innerHTML=Object.entries(TIERS).map(([id,t])=>
-  `<button type="button" class="tierBtn ${id===state.tier?'selected':''}" data-tier="${id}"><span><strong>${t.name}</strong><small>${t.desc}</small></span><em>${money(t.price)}</em></button>`
+  `<button type="button" class="tierBtn ${id===state.tier?'selected':''}" data-tier="${id}"><span><strong>${t.name}</strong><small>${t.desc}</small></span><em>${t.quote?'Quote':money(t.price)}</em></button>`
  ).join('');
  document.querySelectorAll('.tierBtn').forEach(b=>b.onclick=()=>{state.tier=b.dataset.tier;render()});
 }
@@ -156,11 +156,11 @@ function totals(){return TIERS[state.tier].price*state.quantity}
 function renderSummary(){
  const t=totals();
  const rows=[
-  [`${state.quantity} × Tap Stand — ${TIERS[state.tier].name}`,money(TIERS[state.tier].price*state.quantity)],
+  [`${state.quantity} × Tap Stand — ${TIERS[state.tier].name}`,TIERS[state.tier].quote?'Quote':money(TIERS[state.tier].price*state.quantity)],
   ['Colors',`${state.standColor} / ${state.baseColor} / ${state.accentColor}`],
  ];
  if(state.logo)rows.push(['Logo / custom artwork','Follow-up before production']);
- rows.push(['Total',money(t)]);
+ rows.push(['Total',TIERS[state.tier].quote?'Quote':money(t)]);$('checkoutBtn').textContent=TIERS[state.tier].quote?'Request a quote':'Continue to secure checkout';
  $('summaryRows').innerHTML=rows.map((r,i)=>`<div class="row ${i===rows.length-1?'total':''}"><span>${r[0]}</span><span>${r[1]}</span></div>`).join('');
 }
 function render(){renderTiers();renderSwatchGroup('standSwatches','standLabel','standColor');renderSwatchGroup('baseSwatches','baseLabel','baseColor');renderSwatchGroup('accentSwatches','accentLabel','accentColor');renderQty();renderSummary()}
@@ -169,6 +169,7 @@ $('qty').onchange=e=>{state.quantity=+e.target.value;render()};
 $('logoCheck').onchange=e=>{state.logo=e.target.checked;render()};
 
 $('checkoutBtn').onclick=()=>{
+ if(TIERS[state.tier].quote){const d=[`Product: Tap Stand — ${TIERS[state.tier].name}`,`Colors: ${state.standColor} / ${state.baseColor} / ${state.accentColor}`,`Quantity: ${state.quantity}`,$('destUrl').value.trim()?`Link: ${$('destUrl').value.trim()}`:'',state.logo?'Logo or custom artwork: yes':''].filter(Boolean).join('\n');location.href='contact.html?details='+encodeURIComponent(d);return}
  const url=$('destUrl').value.trim();
  if(!/^https?:\/\/.+/i.test(url)){alert('Enter a complete destination link beginning with http:// or https://');return}
  const t=totals();
