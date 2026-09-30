@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A reusable 3D-printed NFC tap stand for your counter or desk. One tap opens your website, menu, booking page, reviews, or contact card — no app required for most phones."><title>Tap Stand — ARXI Systems</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap">
+<style>
+:root{--bg:#0a0b10;--panel:rgba(255,255,255,.055);--text:#eef1fb;--muted:#8b90a8;--line:rgba(255,255,255,.1);--accent:#6d6bff;--accent2:#35e0ff;--pop:#ff5fae}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;position:relative}button,input,select,textarea{font:inherit}body:before{content:'';position:fixed;z-index:-1;inset:-10%;background:radial-gradient(38% 32% at 15% 12%,#6d6bff3d,transparent 70%),radial-gradient(34% 30% at 88% 18%,#35e0ff33,transparent 70%),radial-gradient(40% 34% at 50% 92%,#ff5fae26,transparent 70%);animation:aurora 26s ease-in-out infinite alternate}@keyframes aurora{0%{transform:translate3d(0,0,0) scale(1)}100%{transform:translate3d(-2%,2%,0) scale(1.08)}}body:after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.03;mix-blend-mode:overlay;pointer-events:none;z-index:999}a{color:inherit}h1,h2,h3,.brand{font-family:'Space Grotesk',system-ui,sans-serif}.wrap{max-width:1200px;margin:auto;padding:0 22px}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{text-decoration:none;font-weight:700;font-size:18px;letter-spacing:-.01em}.brand span{background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}.navlinks{display:flex;align-items:center;gap:18px}.navlinks a{text-decoration:none;color:var(--muted);font-size:13px}.button{display:inline-block;text-decoration:none;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#0a0b10!important;border-radius:12px;padding:12px 17px;font-weight:800;box-shadow:0 0 26px -6px #6d6bff99;border:0;cursor:pointer}.eyebrow{display:inline-block;font-family:'JetBrains Mono',ui-monospace,monospace;letter-spacing:.02em;font-size:12px;font-weight:600;color:var(--accent)}.eyebrow:before{content:'// ';color:var(--accent2)}.section{padding:70px 0;border-bottom:1px solid var(--line)}.sectionHead{max-width:760px;margin-bottom:30px}.sectionHead h2{font-size:clamp(30px,5vw,46px);line-height:1.03;margin:10px 0 14px;letter-spacing:-.02em}.sectionHead p{color:var(--muted);font-size:16px;line-height:1.6;margin:0}
+.hero{padding:48px 0 0}.heroGrid{display:grid;grid-template-columns:1.05fr .95fr;gap:22px;align-items:start}.heroCopy h1{font-size:clamp(38px,6vw,58px);line-height:1;margin:12px 0 16px;letter-spacing:-.02em}.heroCopy p{color:var(--muted);font-size:17px;line-height:1.6;max-width:520px;margin:0 0 20px}.stageWrap{border:1px solid var(--line);border-radius:22px;background:var(--panel);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);padding:10px;overflow:hidden;aspect-ratio:4/3}.stageWrap img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;border-radius:14px}.stageNote{margin-top:10px;font-size:12px;color:var(--muted);text-align:center}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}.galleryCard{margin:0;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:7px;text-align:center;overflow:hidden}.galleryCard img{display:block;width:100%;height:118px;object-fit:cover;object-position:center;border-radius:9px}.galleryCard span{display:block;margin-top:7px;font-size:11px;color:var(--muted);font-family:'JetBrains Mono',ui-monospace,monospace}
+.configCard{border:1px solid var(--line);border-radius:22px;background:var(--panel);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);padding:24px;position:sticky;top:20px}.configCard h2{font-size:20px;margin:0 0 4px}.configCard .sub{color:var(--muted);font-size:13px;margin:0 0 18px}.field{width:100%;background:#0e0e14;border:1px solid var(--line);color:var(--text);border-radius:12px;padding:12px 13px;font-size:15px}.field:focus{outline:2px solid #6d6bff55;border-color:var(--accent)}.step{padding:16px 0;border-top:1px solid var(--line)}.step:first-of-type{border-top:0;padding-top:0}.step label.stepLabel{display:block;font-weight:800;font-size:13px;margin-bottom:9px}.tiers{display:grid;grid-template-columns:1fr;gap:8px}.tierBtn{display:flex;justify-content:space-between;align-items:center;gap:10px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--text);border-radius:12px;padding:11px 13px;cursor:pointer;text-align:left}.tierBtn strong{display:block;font-size:13.5px}.tierBtn small{display:block;color:var(--muted);font-size:11.5px;margin-top:2px;line-height:1.4}.tierBtn em{font-style:normal;font-weight:800;color:var(--accent);white-space:nowrap}.tierBtn.selected{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}.swatches{display:flex;flex-wrap:wrap;gap:8px}.swatch{width:34px;height:34px;border-radius:50%;border:2px solid var(--line);cursor:pointer;position:relative;padding:0}.swatch.selected{border-color:var(--accent);box-shadow:0 0 0 2px #6d6bff55}.swatchLabel{font-size:11.5px;color:var(--muted);margin-top:8px;font-family:'JetBrains Mono',ui-monospace,monospace}.checkRow{display:flex;align-items:flex-start;gap:10px;cursor:pointer}.checkRow input{margin-top:3px;accent-color:var(--accent)}.checkRow span{font-size:13px;color:var(--muted);line-height:1.5}.checkRow b{color:var(--text)}.rows{margin:6px 0 16px}.row{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:13.5px;padding:5px 0}.row.total{border-top:1px solid var(--line);margin-top:8px;padding-top:14px;color:var(--text);font-size:21px;font-weight:900}.note{font-size:11.5px;color:var(--muted);line-height:1.5;margin-top:10px}
+.useGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.useCard{border:1px solid var(--line);border-radius:18px;background:var(--panel);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);padding:22px}.useCard .icon{width:38px;height:38px;display:grid;place-items:center;border-radius:11px;background:#6d6bff1a;border:1px solid #6d6bff55;color:var(--accent);font-size:17px;margin-bottom:16px}.useCard h3{font-size:17px;margin:0 0 8px}.useCard p{color:var(--muted);font-size:13.5px;line-height:1.55;margin:0}
+.stepsGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.stepCard{border:1px solid var(--line);border-radius:18px;background:var(--panel);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);padding:22px}.stepCard b{display:grid;place-items:center;width:32px;height:32px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#0a0b10;border-radius:50%;margin-bottom:18px;font-family:'JetBrains Mono',ui-monospace,monospace}.stepCard h3{font-size:17px;margin:0 0 8px}.stepCard p{color:var(--muted);font-size:13.5px;line-height:1.55;margin:0}
+.destList{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}.destChip{border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.03);padding:12px 14px;font-size:13px;color:var(--text)}
+.colorSwatchGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:8px}.colorSwatchCard{border:1px solid var(--line);border-radius:16px;background:var(--panel);padding:16px;text-align:center}.colorSwatchCard .dot{width:38px;height:38px;border-radius:50%;margin:0 auto 10px;border:1px solid var(--line)}.colorSwatchCard span{font-size:12.5px;color:var(--muted)}
+.specTable{width:100%;border-collapse:collapse;border:1px solid var(--line);border-radius:16px;overflow:hidden}.specTable tr{border-top:1px solid var(--line)}.specTable tr:first-child{border-top:0}.specTable td{padding:13px 16px;font-size:14px;vertical-align:top}.specTable td:first-child{color:var(--muted);font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;width:220px;background:rgba(255,255,255,.03)}
+.faq{border-top:1px solid var(--line)}details{border-bottom:1px solid var(--line);padding:18px 0}summary{font-size:16px;font-weight:800;cursor:pointer;list-style:none;padding-right:30px;position:relative}summary:after{content:'+';position:absolute;right:0;color:var(--accent)}details[open] summary:after{content:'−'}details p{color:var(--muted);line-height:1.6;max-width:800px;margin:10px 0 0}
+.cta{margin:20px 0 0;padding:clamp(30px,6vw,64px);text-align:center;background:radial-gradient(circle at top,#6d6bff22,transparent 55%),radial-gradient(circle at bottom right,#35e0ff1a,transparent 55%),var(--panel);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);border:1px solid #6d6bff55;border-radius:26px}.cta h2{font-size:clamp(32px,5vw,52px);line-height:1;margin:10px 0 14px}.cta p{color:var(--muted);max-width:560px;margin:0 auto 22px;font-size:16px;line-height:1.55}
+.footer{display:flex;justify-content:space-between;gap:20px;padding:35px 0;color:#777;font-size:12px}.footer a{text-decoration:none}
+.modal{display:none;position:fixed;inset:0;background:#000c;z-index:30;place-items:center;padding:18px}.modal.show{display:grid}.modalCard{background:var(--panel);backdrop-filter:blur(24px) saturate(160%);-webkit-backdrop-filter:blur(24px) saturate(160%);border:1px solid var(--line);border-radius:22px;max-width:520px;width:100%;padding:25px}.modalCard h2{margin:7px 0;font-size:22px}.modalCard p{color:var(--muted);line-height:1.55}.modalCard button{width:100%;padding:13px;border-radius:12px;border:0;font-weight:850;cursor:pointer}.close{margin-top:9px;background:#27272b;color:#fff}
+@media(max-width:900px){.heroGrid{grid-template-columns:1fr}.configCard{position:static}.useGrid,.stepsGrid{grid-template-columns:1fr}.destList{grid-template-columns:1fr 1fr}.colorSwatchGrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){body{overflow-x:hidden}.wrap{padding:0 12px}.nav{height:auto;display:block;padding:14px 0}.navlinks{width:calc(100vw - 12px);margin-top:12px;overflow-x:auto;scrollbar-width:none;display:flex;gap:8px;padding-bottom:4px}.navlinks::-webkit-scrollbar{display:none}.navlinks a{flex:0 0 auto;white-space:nowrap;font-size:12px;padding:9px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.06)}.navlinks a.button{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#0a0b10!important}.section{padding:46px 0}.destList{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.galleryCard img{height:210px}.field{min-height:48px;font-size:16px}}
+.brand{display:inline-flex;align-items:center;gap:9px}.brandMark{width:28px;height:28px;flex:none}.topbar nav.nav{min-width:0;max-width:100%;overflow-x:auto;scrollbar-width:none}</style></head><body><div class="wrap">
+<header class="nav"><a class="brand" href="index.html"><img class="brandMark" src="assets/logos/arxi-icon-reversed.svg" alt="" width="30" height="30">ARXI<span> Systems</span></a><nav class="navlinks"><a href="products.html">Products</a><a href="for-business.html">For Business</a><a href="lab.html">Lab</a><a href="about.html">About</a><a class="button" href="order.html">Start an order</a></nav></header>
+
+<main>
+<section class="hero"><div class="heroGrid">
+<div class="heroCopy">
+<div class="eyebrow">Tap to connect</div>
+<h1>One tap. Your link, instantly.</h1>
+<p>A reusable, 3D-printed NFC stand for your counter or desk. A single tap opens your website, menu, booking page, reviews, or contact card — no app required for most phones.</p>
+<div class="stageWrap"><img src="assets/nfc-stand-double-tap-black-gold.jpg" alt="Black and gold custom double-tap NFC stand held in one hand" width="960" height="1280"></div>
+<div class="stageNote">Finished double-tap stand shown in black and gold.</div>
+<div class="gallery">
+<figure class="galleryCard"><img src="assets/nfc-stand-geometric-white.jpg" alt="White geometric single-tap NFC stand" width="1368" height="1824" loading="lazy"><span>Geometric Single Tap</span></figure>
+<figure class="galleryCard"><img src="assets/nfc-stand-one-tap-white.jpg" alt="White NFC stand reading One Tap Away" width="1368" height="1824" loading="lazy"><span>One Tap Away</span></figure>
+<figure class="galleryCard"><img src="assets/nfc-keychain-black.jpg" alt="Compact black NFC key chain" width="1368" height="1824" loading="lazy"><span>NFC Key Chain</span></figure>
+</div>
+</div>
+<aside class="configCard">
+<h2 id="configTop">Build your stand</h2>
+<div class="sub">Price updates as you choose.</div>
+<div class="step"><label class="stepLabel">1. Choose your format</label><div class="tiers" id="tiers"></div></div>
+<div class="step"><label class="stepLabel">2. Stand color</label><div class="swatches" id="standSwatches"></div><div class="swatchLabel" id="standLabel"></div></div>
+<div class="step"><label class="stepLabel">3. Base color</label><div class="swatches" id="baseSwatches"></div><div class="swatchLabel" id="baseLabel"></div></div>
+<div class="step"><label class="stepLabel">4. Tap-symbol accent color</label><div class="swatches" id="accentSwatches"></div><div class="swatchLabel" id="accentLabel"></div></div>
+<div class="step"><label class="stepLabel">5. Destination URL</label><input class="field" id="destUrl" type="url" placeholder="https://your-link-here.com"><div class="note">The exact, live link your stand should open. We test it before production.</div></div>
+<div class="step"><label class="stepLabel">6. Quantity</label><select class="field" id="qty"></select></div>
+<div class="step"><label class="checkRow"><input type="checkbox" id="logoCheck"><span><b>Add my logo or custom artwork</b><br>No fixed price yet — we'll follow up to work out sizing and placement before production.</span></label></div>
+<div class="rows" id="summaryRows"></div>
+<button class="button" id="checkoutBtn" style="width:100%">Continue to secure checkout</button>
+<div class="note" style="text-align:center;margin-top:10px">Secure payment powered by Square. Your configuration is verified again before checkout is created.</div>
+</aside>
+</div></section>
+
+<section class="section"><div class="sectionHead"><div class="eyebrow">One tap, instant connection</div><h2>The stand does one job — it connects, instantly.</h2><p>An NFC tag is permanently embedded inside the stand during printing. It isn't exposed and doesn't need a visible access door. Hold a compatible phone near the tap symbol, and it opens whatever destination you've chosen:</p></div>
+<div class="destList">
+<div class="destChip">Business website</div><div class="destChip">Digital business card</div><div class="destChip">Booking page</div>
+<div class="destChip">Restaurant menu</div><div class="destChip">Review page</div><div class="destChip">Social media profile</div>
+<div class="destChip">Payment or tipping page</div><div class="destChip">Portfolio</div><div class="destChip">Contact-information page</div>
+</div>
+<p class="note" style="margin-top:18px;font-size:13px">A payment or tipping destination simply opens the payment page you provide — the stand itself never processes or stores payment-card information.</p>
+</section>
+
+<section class="section"><div class="sectionHead"><div class="eyebrow">How it works</div><h2>Choose. Personalize. Tap.</h2></div>
+<div class="stepsGrid">
+<div class="stepCard"><b>1</b><h3>Choose</h3><p>Pick your format — Key Chain, Single Tap, or Double Tap — and the stand, base, and accent colors.</p></div>
+<div class="stepCard"><b>2</b><h3>Personalize</h3><p>Tell us the exact link you want it to open. We test it before your stand is completed.</p></div>
+<div class="stepCard"><b>3</b><h3>Tap</h3><p>Hold a compatible phone near the tap symbol. No app is normally required.</p></div>
+</div>
+</section>
+
+<section class="section"><div class="sectionHead"><div class="eyebrow">Built for the counter</div><h2>A practical tool for real businesses.</h2><p>Not a novelty — a small, reusable piece of hardware that does one thing reliably: get people from standing in front of you to exactly where you want them online.</p></div>
+<div class="useGrid">
+<article class="useCard"><div class="icon">◐</div><h3>Restaurants &amp; Cafés</h3><p>One tap opens your menu or review page — no laminated card, no typing a URL.</p></article>
+<article class="useCard"><div class="icon">◑</div><h3>Salons &amp; Service Businesses</h3><p>Send guests straight to your booking page from the counter or front desk.</p></article>
+<article class="useCard"><div class="icon">◒</div><h3>Retail Counters</h3><p>Open a tipping or payment page, or point shoppers to your social profile.</p></article>
+<article class="useCard"><div class="icon">◓</div><h3>Real Estate &amp; Sales</h3><p>Share a digital business card or portfolio on the spot, no exchanging numbers.</p></article>
+<article class="useCard"><div class="icon">⬡</div><h3>Front Desks &amp; Offices</h3><p>One tap for your website or a digital contact card — clean and consistent.</p></article>
+<article class="useCard"><div class="icon">⬢</div><h3>Creators &amp; Freelancers</h3><p>Point people to your portfolio or booking page at a market, event, or studio visit.</p></article>
+</div>
+</section>
+
+<section class="section"><div class="sectionHead"><div class="eyebrow">Make it yours</div><h2>Color and customization.</h2><p>Choose independent colors for the stand, the base, and the tap-symbol accent. Want your logo or artwork incorporated, or a fully custom look with a matching landing page and branding? Check the logo option in the configurator, or <a href="contact.html" style="color:var(--accent)">request a custom quote</a> for a bundled design package.</p></div>
+<div class="colorSwatchGrid">
+<div class="colorSwatchCard"><div class="dot" style="background:#1a1a1a"></div><span>Black</span></div>
+<div class="colorSwatchCard"><div class="dot" style="background:#f2f2f2"></div><span>White</span></div>
+<div class="colorSwatchCard"><div class="dot" style="background:#8a8d99"></div><span>Gray</span></div>
+<div class="colorSwatchCard"><div class="dot" style="background:#1f2a52"></div><span>Navy</span></div>
+<div class="colorSwatchCard"><div class="dot" style="background:#1f4d3a"></div><span>Forest Green</span></div>
+<div class="colorSwatchCard"><div class="dot" style="background:#c97a8a"></div><span>Rose</span></div>
+<div class="colorSwatchCard"><div class="dot" style="background:#ece4d3"></div><span>Cream</span></div>
+<div class="colorSwatchCard"><div class="dot" style="background:linear-gradient(135deg,#caa14b,#9c6b3e)"></div><span>Gold / Bronze accent</span></div>
+</div>
+</section>
+
+<section class="section"><div class="sectionHead"><div class="eyebrow">Specifications</div><h2>What you're actually getting.</h2></div>
+<table class="specTable">
+<tr><td>Format</td><td>Key Chain, Single Tap countertop stand, or Double Tap countertop stand (two independently programmed tap zones)</td></tr>
+<tr><td>Front panel</td><td>Approximately 100 × 100 mm with rounded corners (Single Tap / Double Tap countertop format)</td></tr>
+<tr><td>Base</td><td>Separate angled tabletop base</td></tr>
+<tr><td>Surface</td><td>Smooth, clean front surface with a shallow embossed tap symbol marking the NFC area — no visible QR code on the standard version</td></tr>
+<tr><td>Material</td><td>Printed from nonconductive 3D-printing material</td></tr>
+<tr><td>NFC tag</td><td>Permanently embedded during printing — not exposed, no access door. Programmed and tested before the product is completed</td></tr>
+<tr><td>Compatibility</td><td>Works with NFC-enabled smartphones. No app is normally required. Read range and reliability depend on the phone model and antenna location</td></tr>
+<tr><td>Placement</td><td>Use on an ordinary countertop or desk — metal surfaces can interfere with NFC performance</td></tr>
+</table>
+</section>
+
+<section class="section faq"><div class="sectionHead" style="margin-top:36px"><div class="eyebrow">Frequently asked questions</div><h2>Before you order.</h2></div>
+<details open><summary>Do I need an app to use it?</summary><p>No app is normally required for compatible smartphones. Hold the phone near the tap symbol and it opens the destination automatically.</p></details>
+<details><summary>Why isn't my phone reading it?</summary><p>NFC performance depends on your phone model and where its NFC antenna is located. Hold your phone near the tap symbol and give it a moment — you may need to move it slightly to find the right spot.</p></details>
+<details><summary>Can I put it on a metal counter?</summary><p>Metal surfaces can interfere with NFC performance. For the most reliable results, use the stand on an ordinary countertop or desk.</p></details>
+<details><summary>Does it accept payments directly?</summary><p>No. A payment or tipping destination simply opens the payment page you supply — the stand itself never processes or stores payment-card information.</p></details>
+<details><summary>Is this a wireless charger?</summary><p>No — this is a tap-to-connect NFC stand, not a wireless charger.</p></details>
+<details><summary>Can I change the destination link later?</summary><p>The embedded tag isn't designed to be swapped out, but give us a call — we can walk you through reprogramming it yourself, or take care of it for you.</p></details>
+<details><summary>Can I add my logo or custom artwork?</summary><p>Check "Add my logo or custom artwork" while building your stand and we'll follow up to work out sizing, placement, and details before production. For a fully custom look — matching landing page and branding included — request a custom quote.</p></details>
+<details><summary>How exact does my URL need to be?</summary><p>Provide the exact, live link you want the stand to open. We test every link before your order is completed, so make sure it's live before you submit it.</p></details>
+</section>
+
+<section class="cta"><div class="eyebrow">Ready when you are</div><h2>Put your link on the counter.</h2><p>Choose a format, pick your colors, and tell us where you want the tap to lead.</p><a class="button" href="#configTop">Build your stand</a></section>
+</main>
+
+<footer class="footer"><span>© 2026 ARXI Systems · North Carolina · <a href="mailto:andrew@akrandall.com">andrew@akrandall.com</a></span><span><a href="products.html">Products</a> · <a href="tap.html">Tap</a> · <a href="gallery.html">Gallery</a> · <a href="faq.html">FAQ</a> · <a href="contact.html">Custom quote</a> · <a href="lab.html">Lab</a> · <a href="https://akrandall.com">Setup help: AKRD</a></span></footer>
+</div>
+
+<div class="modal" id="modal"><div class="modalCard"><div class="eyebrow" id="modalEyebrow"></div><h2 id="modalTitle"></h2><p id="modalCopy"></p><button class="button" id="modalAction" style="margin-top:6px"></button><button class="close" id="closeBtn">Keep customizing</button></div></div>
+
+<script>
+const TIERS={
+ keyChain:{name:'Key Chain',price:30,desc:'A compact, portable version of the same tap-to-connect technology.'},
+ singleTap:{name:'Single Tap',price:50,desc:'The countertop stand — one tap zone, one destination.'},
+ doubleTap:{name:'Double Tap',price:75,desc:'Two independently programmed tap zones in one stand — two destinations.'}
+};
+const COLORS=[
+ {id:'Black',hex:'#1a1a1a'},{id:'White',hex:'#f2f2f2'},{id:'Gray',hex:'#8a8d99'},{id:'Navy',hex:'#1f2a52'},
+ {id:'Forest Green',hex:'#1f4d3a'},{id:'Rose',hex:'#c97a8a'},{id:'Cream',hex:'#ece4d3'},
+ {id:'Gold',hex:'linear-gradient(135deg,#e4c069,#caa14b)'},{id:'Bronze',hex:'linear-gradient(135deg,#b6825a,#9c6b3e)'}
+];
+const state={tier:'singleTap',standColor:'Black',baseColor:'Black',accentColor:'Gold',quantity:1,logo:false};
+const $=id=>document.getElementById(id),money=n=>'$'+n;
+
+function renderTiers(){
+ $('tiers').innerHTML=Object.entries(TIERS).map(([id,t])=>
+  `<button type="button" class="tierBtn ${id===state.tier?'selected':''}" data-tier="${id}"><span><strong>${t.name}</strong><small>${t.desc}</small></span><em>${money(t.price)}</em></button>`
+ ).join('');
+ document.querySelectorAll('.tierBtn').forEach(b=>b.onclick=()=>{state.tier=b.dataset.tier;render()});
+}
+function renderSwatchGroup(containerId,labelId,stateKey){
+ $(containerId).innerHTML=COLORS.map(c=>
+  `<button type="button" class="swatch ${state[stateKey]===c.id?'selected':''}" data-color="${c.id}" style="background:${c.hex}" aria-label="${c.id}"></button>`
+ ).join('');
+ $(labelId).textContent=state[stateKey];
+ document.querySelectorAll(`#${containerId} [data-color]`).forEach(b=>b.onclick=()=>{state[stateKey]=b.dataset.color;render()});
+}
+function renderQty(){
+ $('qty').innerHTML=Array.from({length:10},(_,i)=>`<option value="${i+1}" ${i+1===state.quantity?'selected':''}>${i+1}</option>`).join('');
+}
+function totals(){return TIERS[state.tier].price*state.quantity}
+function renderSummary(){
+ const t=totals();
+ const rows=[
+  [`${state.quantity} × Tap Stand — ${TIERS[state.tier].name}`,money(TIERS[state.tier].price*state.quantity)],
+  ['Colors',`${state.standColor} / ${state.baseColor} / ${state.accentColor}`],
+ ];
+ if(state.logo)rows.push(['Logo / custom artwork','Follow-up before production']);
+ rows.push(['Total',money(t)]);
+ $('summaryRows').innerHTML=rows.map((r,i)=>`<div class="row ${i===rows.length-1?'total':''}"><span>${r[0]}</span><span>${r[1]}</span></div>`).join('');
+}
+function render(){renderTiers();renderSwatchGroup('standSwatches','standLabel','standColor');renderSwatchGroup('baseSwatches','baseLabel','baseColor');renderSwatchGroup('accentSwatches','accentLabel','accentColor');renderQty();renderSummary()}
+
+$('qty').onchange=e=>{state.quantity=+e.target.value;render()};
+$('logoCheck').onchange=e=>{state.logo=e.target.checked;render()};
+
+$('checkoutBtn').onclick=()=>{
+ const url=$('destUrl').value.trim();
+ if(!/^https?:\/\/.+/i.test(url)){alert('Enter a complete destination link beginning with http:// or https://');return}
+ const t=totals();
+ $('modalEyebrow').textContent='Order ready';
+ $('modalTitle').textContent='Your total: '+money(t);
+ $('modalCopy').textContent='Continue to a secure Square-hosted checkout page. Square collects your payment details; ARXI Systems never receives your card number.';
+ $('modalAction').textContent='Continue with Square';
+ $('modal').classList.add('show');
+};
+$('modalAction').onclick=async()=>{
+ const button=$('modalAction');button.disabled=true;button.textContent='Preparing secure checkout…';
+ try{
+  const response=await fetch('/api/create-checkout',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({
+   kind:'nfcStand',tier:state.tier,standColor:state.standColor,baseColor:state.baseColor,accentColor:state.accentColor,
+   url:$('destUrl').value.trim(),quantity:state.quantity,logo:state.logo
+  })});
+  const data=await response.json();
+  if(!response.ok)throw new Error(data.error||'Checkout is unavailable');
+  location.href=data.url;
+ }catch(error){alert(error.message);button.disabled=false;button.textContent='Continue with Square'}
+};
+$('closeBtn').onclick=()=>$('modal').classList.remove('show');
+$('modal').onclick=e=>{if(e.target===e.currentTarget)e.currentTarget.classList.remove('show')};
+
+render();
+</script>
+</body></html>
