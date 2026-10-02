@@ -19,6 +19,16 @@
 @media(max-width:600px){.gallery{grid-template-columns:1fr}.galleryCard img{height:210px}.field{min-height:48px;font-size:16px}.destList{grid-template-columns:1fr}}
 
 
+/* Media slots: filled from the admin portal. Hidden until the file exists. */
+.mslot{margin:0;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#000}
+.mslot:not(.on){display:none}
+.mslot img,.mslot video{display:block;width:100%;height:auto;border:0;border-radius:0}
+.mstage{margin-top:14px}
+.mrow{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.mrow:not(:has(.mslot.on)){display:none}
+.mrow .mslot img{aspect-ratio:4/3;object-fit:cover}
+@media(max-width:700px){.mrow{grid-template-columns:1fr}}
+.stageWrap video{display:block;width:100%;height:100%;object-fit:cover;border-radius:14px}
 .brand{display:inline-flex;align-items:center;gap:9px}.brandMark{width:30px;height:30px;flex:none}
 .navlinks a[aria-current="page"]{color:var(--text)}
 .status{align-self:flex-start;display:inline-flex;align-items:center;gap:6px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:5px 10px;border:1px solid}
